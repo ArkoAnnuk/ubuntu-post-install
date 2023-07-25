@@ -1,6 +1,15 @@
 Ubuntu Post Install Scripts
 ===========================
 
+Fork to kickstart my dev environment setup after a fresh Ubuntu 22.04 LTS install.
+
+Changes made:
+- Unrequired functions removed from the main script
+- APT packages installation consolidated under one list
+- List and config files personlized
+
+# ↓ Author's README ↓
+
 A semi-automatic and interactive set of post-installation scripts for Ubuntu and its derivatives. You can use this project to install your favourite apps, set your preferred settings, and do minor housekeeping.
 
 This project is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](/LICENSE). If you have improvements, contributions to the [original](https://github.com/snwh/ubuntu-post-install) are much appreciated.

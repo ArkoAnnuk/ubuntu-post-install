@@ -16,6 +16,7 @@ function install_snap_apps {
 			$LINES $COLUMNS $(( $LINES - 12 )) \
 			'install_snap_bitwarden'    'Bitwarden' \
 			'install_snap_obsidian'     'Obsidian' \
+			'install_snap_code'         'Visual Studio Code' \
 			3>&1 1>&2 2>&3)
 
 		case "${SNAPS}" in
@@ -24,6 +25,9 @@ function install_snap_apps {
 				;;
 			install_snap_obsidian)
 				install_snap_package "Obsidian" "obsidian --classic" install_snap_apps
+				;;
+		    install_snap_code)
+				install_snap_package "Visual Studio Code" "code --classic" install_snap_apps
 				;;
 			*) 
 				# cancel
