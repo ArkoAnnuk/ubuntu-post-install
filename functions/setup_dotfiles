@@ -96,10 +96,7 @@ function setup_dotfiles {
 		--menu "\nWhat would you like to do?" \
 		--cancel-button "Go Back" \
 		$LINES $COLUMNS $(( $LINES - 12 )) \
-		'write_profile'         'Configure environment variables' \
-		'write_bash_aliases'   'Set custom Bash aliases' \
 		'write_bashrc'         'Set custom Bash preferences' \
-		'write_editorconfig'   'Set custom editor config' \
 		3>&1 1>&2 2>&3)
 	# check exit status
 	if [ $? = 0 ]; then
